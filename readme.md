@@ -1,5 +1,9 @@
+# SpamBot 2
+
 Версия Python: 3.11.5
-Установка (Windows):
+
+## Установка (Windows)
+
 1. Создать виртуальное окружение: python -m venv env
 2. Активировать виртуальное окружение в контексте интерпретатора: env\Scripts\activate
 3. Установить зависимости: pip install -r requirements.txt
