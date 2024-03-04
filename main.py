@@ -6,7 +6,7 @@ API_HASH = ""
 
 app = Client("my_account", API_ID, API_HASH)
 
-@app.on_message(filters.text | filters.photo & filters.channel)
+@app.on_message(filters.channel & (filters.text | filters.photo))
 async def main(client, message):
     post = await app.get_discussion_message(message.chat.id, message.id)
     await post.reply("Крутяк!")
